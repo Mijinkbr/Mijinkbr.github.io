@@ -103,18 +103,65 @@
 
     <!-- add two image in row -->
     <div class="flex mt-8 mx-8 gap-x-4" style="height: 400px">
-      <img
-        src="./resources/event1.jpg"
-        alt="Event 1"
-        class="w-1/2 rounded-lg object-cover"
-        style="height: 400px"
-      />
-      <img
-        src="./resources/event2.jpg"
-        alt="Event 2"
-        class="w-1/2 rounded-lg object-cover"
-        style="height: 400px"
-      />
+      <div
+        style="
+          height: 400px;
+          /* border: 1px solid rgb(9, 255, 0); */
+          flex: 1;
+          display: flex;
+        "
+      >
+        <img
+          src="./resources/event1.jpg"
+          alt="Event 1"
+          class="w-full object-cover"
+          style="height: 400px"
+        />
+        <div
+          style="
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50%;
+            width: 50%;
+            /* border: 1px solid rgb(145, 123, 87); */
+          "
+        >
+          <div class="text-2xl font-bold">Wedding Events</div>
+        </div>
+      </div>
+
+      <div
+        style="
+          height: 400px;
+          /* border: 1px solid rgb(9, 255, 0); */
+          flex: 1;
+          display: flex;
+        "
+      >
+        <img
+          src="./resources/event2.jpg"
+          alt="Event 2"
+          class="w-full object-cover"
+          style="height: 400px"
+        />
+        <div
+          style="
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50%;
+            width: 50%;
+            /* border: 1px solid rgb(145, 123, 87); */
+          "
+        >
+          <div class="text-2xl font-bold">Musical Festival</div>
+        </div>
+      </div>
     </div>
 
     <div class="flex mt-8 mx-8 gap-x-4 justify-center" style="height: 400px">
@@ -124,10 +171,21 @@
         class="w-1/2 rounded-lg object-cover"
         style="height: 400px"
       />
+      <div style="position: absolute">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+          "
+        >
+          <div class="text-2xl font-bold">Corporate Events</div>
+        </div>
+      </div>
     </div>
 
-    <!-- Why You Should Choose Us? -->
-    <!-- We turn your vision into reality with unmatched expertise and passion. Our team is dedicated to delivering seamless event planning, personalized to your needs, ensuring every detail is perfect. With innovative ideas, industry connections, and a commitment to excellence, we create memorable experiences that exceed expectations. Choose EventVerse for professionalism, creativity, and a partner you can trust to make your event truly extraordinary. -->
     <div class="mx-4 mt-8">
       <h1 class="text-4xl text-center">Why You Should Choose Us?</h1>
       <p class="text-center mt-4 mx-32">
@@ -141,47 +199,13 @@
       </p>
     </div>
 
-    <!-- <div class="flex mt-8 mx-8 gap-x-4" style="height: 400px">
-      <div style="flex: 1; display: flex">
-        <img
-          src="./resources/event1.jpg"
-          alt="Event 1"
-          class="w-full rounded-lg object-cover"
-          style="height: 400px"
-        />
-        <div style="position: absolute; width: 100%">
-          <div
-            style="
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-              border: 1px solid red;
-              height: 400px;
-              width: 45%;
-            "
-          >
-            <div class="text-xl font-bold">Wedding Events</div>
-          </div>
-        </div>
-      </div>
-
-      <img
-        src="./resources/event2.jpg"
-        alt="Event 2"
-        class="w-1/2 rounded-lg object-cover"
-        style="height: 400px"
-      />
-    </div> -->
-
-    <!-- add nice footer containg addresses etc. -->
     <div>
       <footer
         class="bg-gray-800 p-4 text-center mt-8"
         style="border: 2px solid rgba(255, 0, 0, 0.637)"
       >
         <div class="text-xl font-bold">EventVerse</div>
-        <div class="text-sm">Event Management</div>
+        <div class="text-sm">event management</div>
         <div
           class="mt-4"
           style="display: flex; flex-direction: column; align-items: center"
@@ -193,7 +217,7 @@
               alt="mail"
               style="width: 20px; object-fit: contain"
             />
-            <a href="mailto:example@mail.com"> 9876543211 </a>
+            <a href="#"> 9876543211 </a>
           </div>
 
           <div style="display: flex; gap: 8px; justify-content: center">
@@ -202,7 +226,7 @@
               alt="mail"
               style="width: 20px; object-fit: contain"
             />
-            <a href="mailto:example@mail.com"> 9876543210 </a>
+            <a href="#"> 9876543210 </a>
           </div>
 
           <div style="display: flex; gap: 8px; justify-content: center">
