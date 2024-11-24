@@ -7,17 +7,49 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-900 text-white">
-    <nav class="bg-gray-0 p-4 flex justify-between items-center">
-      <div class="text-2xl font-bold">EventVerse</div>
+    <nav class="bg-gray-800 p-4 flex justify-between items-center">
+      <div>
+        <div class="text-xl font-bold">EventVerse</div>
+        <div class="text-sm">Event Management</div>
+      </div>
       <ul class="flex space-x-6">
-        <li><a href="#" class="hover:text-blue-400">About</a></li>
-        <li><a href="#" class="hover:text-blue-400">Services</a></li>
-        <li><a href="#" class="hover:text-blue-400">Contact</a></li>
+        <!-- <li><a href="#" class="hover:text-blue-400">About</a></li> -->
+        <!-- Services Dropdown -->
+        <li class="relative group">
+          <a href="#" class="hover:text-blue-400">Services</a>
+          <ul
+            class="absolute hidden group-hover:block bg-gray-700 text-white pt-2 rounded shadow-lg"
+          >
+            <li class="px-4 py-2 hover:bg-gray-600">
+              <a href="#">Corporate Event</a>
+            </li>
+            <li class="px-4 py-2 hover:bg-gray-600">
+              <a href="#">Exhibition</a>
+            </li>
+            <li class="px-4 py-2 hover:bg-gray-600">
+              <a href="#">Musical Festival</a>
+            </li>
+          </ul>
+        </li>
+        <!-- Contact Us Dropdown -->
+        <li class="relative group">
+          <a href="#" class="hover:text-blue-400">Contact Us</a>
+          <ul
+            class="absolute hidden group-hover:block bg-gray-700 text-white pt-2 rounded shadow-lg mr-2"
+          >
+            <li class="px-4 py-2 hover:bg-gray-600">
+              <a href="#">987654321</a>
+            </li>
+            <li class="px-4 py-2 hover:bg-gray-600">
+              <a href="#">example@email.com</a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </nav>
 
-    <!-- video player 100% width -->
-    <div class="relative" style="padding-top: 56.25%">
+    <!-- Video player -->
+    <div class="relative" style="padding-top: 56.25%; z-index: -1">
       <video
         class="absolute top-0 left-0 w-full h-full"
         src="./resources/intro.mp4"
@@ -26,5 +58,46 @@
         muted
       ></video>
     </div>
+
+    <div class="mx-4">
+      <h1 class="text-4xl text-center mt-8">Welcome to EventVerse</h1>
+      <p class="text-center mt-4">
+        We handle every project with great care and attention to detail. No
+        matter how big or small your event is, we treat it like a business
+        project with clear goals, set milestones, and a solid plan to make sure
+        everything is done on time and within budget. We prioritize your needs
+        by learning about your organization, understanding your challenges, and
+        planning events that help you achieve your goals.
+      </p>
+    </div>
+
+    <!-- add two image in row -->
+    <div class="flex justify-center mt-8 mx-8 gap-x-4">
+      <img
+        src="./resources/event1.jpg"
+        alt="Event 1"
+        class="w-1/2 rounded-lg object-cover"
+        style="height: 400px"
+      />
+      <img
+        src="./resources/event2.jpg"
+        alt="Event 2"
+        class="w-1/2 rounded-lg object-cover"
+        style="height: 400px"
+      />
+    </div>
+
+    <!-- add nice footer containg addresses etc. -->
+    <footer class="bg-gray-800 p-4 text-center mt-8">
+      <div class="text-xl font-bold">EventVerse</div>
+      <div class="text-sm">Event Management</div>
+      <div class="mt-4">
+        <div>123, ABC Street, XYZ City, 123456</div>
+        <div>9876543210</div>
+        <div>
+          <a href="mailto:example@mail.com"> example@mail.com </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
